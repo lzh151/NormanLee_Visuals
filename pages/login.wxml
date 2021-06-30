@@ -1,0 +1,7 @@
+<!--pages/login.wxml-->
+<text>pages/login.wxml</text>
+<view>
+  <input type="text" name="userName" placeholder="用户名" />
+  <input type="text" name="password" placeholder="密码" />
+  <button name="submit">提交</button>
+</view>

@@ -44,5 +44,17 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  login: function(options){
+    wx.request({
+      url: 'http://localhost:8080/index',
+      data:{
+        userName:options.detail.value.userName,
+        password:options.detail.value.password
+      },
+      success: function(res){
+        console.log(res)
+      }
+    })
   }
 })
